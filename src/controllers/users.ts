@@ -41,7 +41,7 @@ export const sendEmailToUser = async (req: any, res: any) => {
 
         
         const mailOptions = {
-          from: "harryfilza@gmail.com",
+          from: process.env.EMAIL_USER,
           to: email,                    // Receiver email (Gmail)
           subject: "Hello from Mailtrap!",            // Subject line
           text: "Hi, Salam Kenal", // Plain text body
