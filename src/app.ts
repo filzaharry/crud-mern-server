@@ -11,7 +11,7 @@ require('dotenv').config()
 
 const app = express()
 const PORT = process.env.PORT || 9000;
-const MONGO_URI = process.env.MONGO_URI;
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://greatnapolo:Allahuakbar123@cluster0.g4ggd.mongodb.net/';
 
 app.use(cors({
   credentials:true,

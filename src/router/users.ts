@@ -7,5 +7,5 @@ export default(router:express.Router) => {
     router.get('/users', isAuthenticated, getAllUsers)
     router.delete('/user/:id', isAuthenticated, deleteUser)
     router.patch('/user/:id', isAuthenticated, updateUser)
-    router.patch('/user/:email', isAuthenticated, sendEmailToUser)
+    router.get('/user/:email', sendEmailToUser)
 }
